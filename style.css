@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    margin: 10px;
+}
+
+.container {
+   display: flex;
+   max-width: 900px;
+   margin: 0 auto;
+   height: 100vh;
+   align-items: center;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;  
+}
+
+h1 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 4rem;
+}
+
+img {
+    margin-bottom: 1rem;
+}
+
+a {
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.card1 {
+    background-color: hsl(31, 77%, 52%);
+    padding: 3rem;
+    border-radius: 10px 0 0 10px; 
+}
+
+.card2 {
+    background-color: hsl(184, 100%, 22%);
+    padding: 3rem;
+}
+
+.card3 {
+    background-color: hsl(179, 100%, 13%);
+    padding: 3rem;
+    border-radius: 0 10px 10px 0;
+}
+
+@media (max-width: 750px) {
+   .container {
+    flex-direction: column;
+    max-width: 400px;
+   }
+
+   .wrapper {
+    grid-template-columns: 1fr;
+   }
+
+   .card1 {
+    border-radius: 10px 10px 0 0;
+   }
+
+   .card3 {
+    border-radius: 0 0 10px 10px;
+   }
+}
