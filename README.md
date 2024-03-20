@@ -18,7 +18,7 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 ### What I learned
 
-I learned to build aa card component using flexbox and grid in order to create a responsive project.
+I learned to build a card component using flexbox and grid in order to create a responsive project.
 
 ### Continued development
 
